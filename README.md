@@ -1,9 +1,9 @@
 Generates and analyzes data for the Statistical Topography of Spacetime.
 
 Dependencies:
-    - Core: numpy, pandas, matplotlib, seaborn, scipy, sklearn
-        - hdim_opt (depends on numpy, scipy); for QUASAR optimization, Lorentzian KDE, sensitivity analysis, zero-phase component analysis
-    - Optional (using spacetime_histories.csv): joblib, tqdm, gplearn
+- Core: numpy, pandas, matplotlib, seaborn, scipy, sklearn
+    - hdim_opt (depends on numpy, scipy); for QUASAR optimization, Lorentzian KDE, sensitivity analysis, zero-phase component analysis
+- Optional (using spacetime_histories.csv): joblib, tqdm, gplearn
 
 Notes:
 - Notebook is self-contained. First cells are reserved for function definitions, followed by the execution cells.
