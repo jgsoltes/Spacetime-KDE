@@ -1,7 +1,7 @@
 Generates and analyzes data for the statistical topography of spacetime.
 
 Dependencies:
-- Core: pandas, matplotlib, seaborn, scipy, sklearn, hdim_opt, numpy (v2.3 or lower, for KDE via calculations via 'numba').
+- Core: pandas, matplotlib, seaborn, scipy, sklearn, hdim_opt, numpy (v2.3 OR LOWER, for the KDE calculations that depend on 'numba' for computational efficiency).
 - Optional (if not re-running data generation): joblib, tqdm, gplearn, os (for saving plots).
 
 Datasets:
