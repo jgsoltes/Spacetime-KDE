@@ -1,22 +1,19 @@
 Generates and analyzes data for the statistical topography of spacetime.
 
 Dependencies:
-- Core: pandas, matplotlib, seaborn, scipy, sklearn, hdim_opt,
-    - numpy (v2.3 OR LOWER, for the KDE calculations that depend on 'numba' for computational efficiency).
-- Optional (if not re-running data generation): joblib, tqdm, gplearn, os (for saving plots).
+- NUMPY v2.3 OR LOWER (for KDE calculations via 'numba').
+- Core: pandas, matplotlib, seaborn, scipy, sklearn, hdim_opt.
+- Optional (if not re-generating data): joblib, tqdm, gplearn, os.
 
 Datasets:
-- spacetime_ensemble.csv: The core data ensemble of spacetime coordinates, used to build the KDE (cell 4).
-- fluctuation_probs.csv: The exotic fluctuation probabilities, used in the analysis (cell 8).
+- spacetime_ensemble.csv: The core data ensemble of spacetime coordinates, used to build the KDE.
+- fluctuation_probs.csv: The exotic fluctuation probabilities, used in the analysis.
 
-Misc:
-- plot_resolution = 'high' for high-res plots; 'low' for faster analysis.
-- Optimization cell defaults to a lower 'n_points'/'popsize'/'maxiter' block for testing; can uncomment the actual hyperparameter block for full reproducibility.
-- Symbolic regression cell may be un-commented to generate new analytical approximations.
-
-Structure:
+Usage:
 - Notebook is self-contained. First cells are reserved for function definitions, followed by the execution cells.
+- plot_resolution = 'high' for high-res plots; 'low' for faster analysis.
 - Fully executable via 'run all'.
+- Optimization and symbolic regression cells are commented out, to avoid length re-runs. Uncomment these cells if desired.
 
 - Each cell is titled for clarity:
     - Cell 1: Imports, constant definitions, parameter bounds.
